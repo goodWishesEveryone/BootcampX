@@ -8,6 +8,7 @@ const pool = new Pool({
 });
 
 const cohortName = process.argv[2] || "JUL02";
+const limit = process.argv[3] || 5;
 // Store all potentially malicious values in an array.
 const values = [`%${cohortName}%`];
 
